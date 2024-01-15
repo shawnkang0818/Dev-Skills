@@ -1,7 +1,7 @@
 const skills = [
-  {text: 'Feed llama', done: true, _id: 125223},
-  {text: 'Sleep under the stars', done: false, _id: 127904},
-  {text: 'Buy milk', done: false, _id: 139608},
+  {text: 'Washing dishes', acquire: true, _id: 125223},
+  {text: 'Problem solving', acquire: false, _id: 127904},
+  {text: 'Communication', acquire: false, _id: 139608},
 ]
 
 export { 
