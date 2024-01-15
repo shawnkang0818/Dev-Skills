@@ -15,6 +15,16 @@ import { router as skillsRouter } from './routes/skills.js'
 // create the express app
 const app = express()
 
+//view engine setup
+app.set('view engine', 'ejs')
+
+//middleware
+app.use(function(req, res, next) {
+  // Add a time property to the req object
+  req.time = new Date().toLocaleTimeString()
+  next()
+})
+
 // view engine setup
 app.set('view engine', 'ejs')
 
